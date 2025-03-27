@@ -102,7 +102,7 @@ const HomePage = () => {
               />
 
             <Card
-              image={image1}
+              image={image3}
               restName={"Bbq Nation"}
               restStarRating={4.0}
               restTime={"Open till - 10pm"}
