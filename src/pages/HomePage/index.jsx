@@ -10,7 +10,7 @@ import TopFilter from '../../components/TopFilter/index.jsx'
 import SideBarFilterCard from '../../components/sideBarFilterCard/index.jsx'
 import SortByCard from '../../components/SortByCard.jsx/index.jsx'
 import image2 from '../../assets/Images/h2.jpg'
-import image1 from '../../assets/Images/h1.jpg'
+import image3 from '../../assets/Images/h1.jpg'
 // import topImage from "../../assets/Images/res4.jpg"
 
 
@@ -82,7 +82,7 @@ const HomePage = () => {
 
             </div>
             <Card
-              image={image1}
+              image={image3}
               restName={"The Spice Garden"}
               restStarRating={2.3}
               restTime={"Open till - 11pm"}
