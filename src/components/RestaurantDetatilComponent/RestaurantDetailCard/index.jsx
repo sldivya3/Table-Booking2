@@ -2,7 +2,14 @@ import React from 'react'
 
 const RestaurantDeatilsCard = () => {
   return (
-    <div>index</div>
+    <div>
+
+
+
+
+
+      
+    </div>
   )
 }
 
