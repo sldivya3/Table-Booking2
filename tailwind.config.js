@@ -23,7 +23,7 @@ export default {
         backgroundLight: "#f3f4f6", // Light mode background
         backgroundDark: "#1d222a", // Dark mode background
         textLight: "#1a1a1a", // Light mode text
-        textDark: "#e0e0e0", // Dark mode text
+        // Dark mode text
       },
       fontFamily: {
         sans: ["Inter", "Roboto", "sans-serif"],
