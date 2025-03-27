@@ -8,7 +8,7 @@ const TopFilter = () => {
 
 
   return (
-    <div className="font-poppins flex items-center z-[999] justify-center accent-orange-500/25">
+    <div className="md:hidden font-poppins flex items-center z-[999] justify-center accent-orange-500/25">
       <button onClick={() => setOpen(true)} className="px-1 py-2 h-9 lg:h-10 lg:p-2 md:p-2 md:h-10 w-32 bg-orange-500 font-bold text-white rounded justify-center flex" >
         Filters  &nbsp;
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">

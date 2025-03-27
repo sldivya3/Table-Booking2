@@ -1,8 +1,26 @@
-import React from 'react'
+
+import { useState,useEffect } from 'react';
 import tableBookinglogo from '../../assets/Images/tableBooking-logo.png'
 
 
 const Navbar = () => {
+
+  const [userLocation, setUserLocation] = useState("");
+
+  useEffect(() => {
+    fetch("https://ipinfo.io/json")
+    .then(res => res.json())
+    .then(data => setUserLocation(`${data.city.toLowerCase()} , ${data.region}-${data.country}`))
+    .catch(err => alert("Unable To detect your locations"))
+  }, [])
+  
+
+
+  
+
+
+
+
   return (
 
 
@@ -20,7 +38,12 @@ const Navbar = () => {
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
           </svg>
-          &nbsp;  <input type="text" placeholder="Search for location" className="w-full outline-none bg-transparent" />
+          &nbsp; 
+          
+          <input 
+          value={userLocation}
+          onChange={(e)=>setUserLocation(e.target.value)}
+          type="text" placeholder="Search for location" className="w-full outline-none bg-transparent text-[15px]" />
         </div>
 
           
